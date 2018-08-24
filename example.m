@@ -2,7 +2,7 @@ addpath( fullfile(pathfor('repositories'), 'task_maker') );
 
 %%
 
-[status, result] = task_maker.make( 'cs_plus', '/Users/Nick/Desktop' );
+[status, result] = task_maker.make( 'jjtom', cd );
 
 disp( status );
 disp( result );
