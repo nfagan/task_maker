@@ -21,7 +21,7 @@ conf.(const.config_id) = true;
 
 %   PATHS
 PATHS = struct();
-PATHS.repositories = '';
+PATHS.repositories = fileparts( {0}.util.get_project_folder() );
 
 %   DEPENDENCIES
 DEPENDS = struct();
@@ -45,7 +45,8 @@ SCREEN.rect = [ 0, 0, 400, 400 ];
 TIMINGS = struct();
 
 time_in = struct();
-time_in.fixation = 0.1;
+time_in.new_trial = 0;
+time_in.fixation = 1;
 
 TIMINGS.time_in = time_in;
 
