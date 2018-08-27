@@ -16,14 +16,14 @@ const = {0}.config.constants();
 
 conf = struct();
 
-%   ID
+% ID
 conf.(const.config_id) = true;
 
-%   PATHS
+% PATHS
 PATHS = struct();
 PATHS.repositories = fileparts( {0}.util.get_project_folder() );
 
-%   DEPENDENCIES
+% DEPENDENCIES
 DEPENDS = struct();
 DEPENDS.repositories = {{ 'ptb_helpers', 'serial_comm' }};
 
@@ -72,7 +72,7 @@ SERIAL = struct();
 SERIAL.port = 'COM3';
 SERIAL.channels = {{ 'A' }};
 
-%   EXPORT
+% EXPORT
 conf.PATHS = PATHS;
 conf.DEPENDS = DEPENDS;
 conf.TIMINGS = TIMINGS;

@@ -11,7 +11,8 @@
 # example
 
 ```matlab
-addpath( 'path/to/task_maker/repository/' );
+addpath( genpath('path/to/psychtoolbox') );
+addpath( 'path/to/task_maker' );
 
 task_name = 'eg';
 %   note that the dependencies listed above will need to be on
@@ -20,7 +21,7 @@ task_name = 'eg';
 %   then those will be added automatically.
 task_path = 'path/to/save/inside';
 
-task_maker( task_name, task_path );
+task_maker.make( task_name, task_path );
 
 addpath( fullfile(task_path, task_name) );
 
